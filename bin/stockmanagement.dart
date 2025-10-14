@@ -1,14 +1,6 @@
-import 'dart:io';
-
-//Write a dart program to check whether a number is positive, negative, or zero.
+//Write a dart program to print your name 100 times.
 void main() {
-  print("Enter a number : ");
-  int? number = int.parse(stdin.readLineSync()!);
-  if (number >= 1) {
-    print("$number is a positive number");
-  } else if (number < 0) {
-    print("$number is a negative number");
-  } else {
-    print("It's a $number");
+  for (int i = 1; i <= 100; i++) {
+    print("$i - dharmtejaa");
   }
 }
