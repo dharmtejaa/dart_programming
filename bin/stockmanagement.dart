@@ -1,10 +1,10 @@
 import 'dart:io';
 
-//Write a dart program to calculate the sum of natural numbers.
+//Write a dart program to generate multiplication tables of a given number.
 void main() {
-  int sum = 0;
-  for (int i = 1; i <= 100; i++) {
-    sum += i;
+  print("Enter a number to generate its Multipllication Table : ");
+  int? multiplicationNumber = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= 10; i++) {
+    print("$multiplicationNumber x $i = ${multiplicationNumber * i}");
   }
-  print("The sum of first 100 natural numbers is $sum");
 }
