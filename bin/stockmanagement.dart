@@ -1,8 +1,12 @@
-//Write a program in Dart to reverse a String using function.
+//rite a program in Dart to calculate power of a certain number. For e.g 5^3=125
+import 'dart:math';
+
 void main() {
-  print(reverseString("Tej"));
+  int base = 5;
+  int exponent = 3;
+  print(calculatePower(base, exponent));
 }
 
-String reverseString(String reverse) {
-  return reverse.split('').reversed.join();
+num calculatePower(int base, int exponent) {
+  return pow(base, exponent);
 }
