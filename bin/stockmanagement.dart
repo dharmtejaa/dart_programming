@@ -1,21 +1,9 @@
-//Write a function in Dart called maxNumber that takes three numbers as arguments and returns the largest number.
+//Write a function in Dart called isEven that takes a number as an argument and returns True if the number is even, and False otherwise.
 void main() {
-  int num1 = 15;
-  int num2 = 30;
-  int num3 = 8;
-  print(findGreatestNumber(num1, num2, num3));
+  int num1 = 14;
+  print(isEven(num1));
 }
 
-int findGreatestNumber(int num1, int num2, int num3) {
-  if (num1 >= num2) {
-    if (num1 >= num3) {
-      return num1;
-    } else {
-      return num3;
-    }
-  } else if (num2 >= num3) {
-    return num2;
-  } else {
-    return num3;
-  }
+bool isEven(int num1) {
+  return num1 % 2 == 0;
 }
