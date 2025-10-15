@@ -1,19 +1,10 @@
-//Write a program in Dart that generates random password.
+//Write a program in Dart that find the area of a circle using function. Formula: pi * r * r
 import 'dart:math';
 
 void main() {
-  String password = generatePassword(8);
-  print("Generated Password: $password");
+  print("Area of Circle is : ${areaOfCircle(3.14, 5)}");
 }
 
-String generatePassword(int passwordLength) {
-  Random random = Random();
-  int passwordLength = 8;
-  const String chars =
-      'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()_+[]{}|;:,.<>?';
-  String password = List.generate(
-    passwordLength,
-    (index) => chars[random.nextInt(chars.length)],
-  ).join();
-  return password;
+double areaOfCircle(double pi, double r) {
+  return pi * pow(r, 2);
 }
