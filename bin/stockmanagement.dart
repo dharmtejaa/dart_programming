@@ -1,8 +1,12 @@
-//Write a program in Dart to print your own name using function.
+//Write a program in Dart to print even numbers between intervals using function.
 void main() {
-  printName("Dharmtejaa");
+  printEvenNumbers(1, 20);
 }
 
-void printName(String userName) {
-  print(userName);
+void printEvenNumbers(int start, int end) {
+  for (int i = start; i < end; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
 }
