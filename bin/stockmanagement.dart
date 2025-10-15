@@ -1,9 +1,10 @@
-//Write a function in Dart called isEven that takes a number as an argument and returns True if the number is even, and False otherwise.
+//Write a function in Dart called createUser with parameters name, age, and isActive, where isActive has a default value of true.
 void main() {
-  int num1 = 14;
-  print(isEven(num1));
+  createUser('Tej', 25, isActive: false);
+  createUser("dharmateja", 23);
+  createUser("sunshine", 22, isActive: true);
 }
 
-bool isEven(int num1) {
-  return num1 % 2 == 0;
+void createUser(String name, int age, {bool isActive = true}) {
+  print('Name: $name, Age: $age, Active: $isActive');
 }
