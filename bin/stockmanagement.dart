@@ -1,12 +1,9 @@
-//Write a program in Dart to print even numbers between intervals using function.
+//Create a function called greet that takes a name as an argument and prints a greeting message.
+//For example, greet(“John”) should print “Hello, John”.
 void main() {
-  printEvenNumbers(1, 20);
+  greet("Tej");
 }
 
-void printEvenNumbers(int start, int end) {
-  for (int i = start; i < end; i++) {
-    if (i % 2 == 0) {
-      print(i);
-    }
-  }
+void greet(String name) {
+  print("Hello, $name");
 }
