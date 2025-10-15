@@ -1,9 +1,19 @@
-//Create a function called greet that takes a name as an argument and prints a greeting message.
-//For example, greet(“John”) should print “Hello, John”.
+//Write a program in Dart that generates random password.
+import 'dart:math';
+
 void main() {
-  greet("Tej");
+  String password = generatePassword(8);
+  print("Generated Password: $password");
 }
 
-void greet(String name) {
-  print("Hello, $name");
+String generatePassword(int passwordLength) {
+  Random random = Random();
+  int passwordLength = 8;
+  const String chars =
+      'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()_+[]{}|;:,.<>?';
+  String password = List.generate(
+    passwordLength,
+    (index) => chars[random.nextInt(chars.length)],
+  ).join();
+  return password;
 }
