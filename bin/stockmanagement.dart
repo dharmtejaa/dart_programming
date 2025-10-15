@@ -1,10 +1,9 @@
-//Write a function in Dart called createUser with parameters name, age, and isActive, where isActive has a default value of true.
+//Write a function in Dart called calculateArea that calculates the area of a rectangle.
+//It should take length and width as arguments, with a default value of 1 for both. Formula: length * width.
 void main() {
-  createUser('Tej', 25, isActive: false);
-  createUser("dharmateja", 23);
-  createUser("sunshine", 22, isActive: true);
+  print("Area of Rectangle ${calculateAreaOfRectangle(5, 10)}");
 }
 
-void createUser(String name, int age, {bool isActive = true}) {
-  print('Name: $name, Age: $age, Active: $isActive');
+double calculateAreaOfRectangle([double length = 1, double width = 1]) {
+  return length * width;
 }
