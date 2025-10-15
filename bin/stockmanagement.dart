@@ -1,9 +1,8 @@
-//Write a dart program to print 1 to 100 but not 41.
+//Write a program in Dart to print your own name using function.
 void main() {
-  for (int i = 1; i <= 100; i++) {
-    if (i == 41) {
-      continue;
-    }
-    print(i);
-  }
+  printName("Dharmtejaa");
+}
+
+void printName(String userName) {
+  print(userName);
 }
