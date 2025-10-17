@@ -1,9 +1,7 @@
-//Write a function in Dart called calculateArea that calculates the area of a rectangle.
-//It should take length and width as arguments, with a default value of 1 for both. Formula: length * width.
+//Create a list of names and print all names using list.
 void main() {
-  print("Area of Rectangle ${calculateAreaOfRectangle(5, 10)}");
-}
-
-double calculateAreaOfRectangle([double length = 1, double width = 1]) {
-  return length * width;
+  List<String> names = ['Teja', 'dharma', 'dharmtejaa', 'tej'];
+  for (var nam in names) {
+    print(nam);
+  }
 }
