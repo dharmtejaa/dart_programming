@@ -1,7 +1,7 @@
-//Create a list of names and print all names using list.
+//Create a set of fruits and print all fruits using loop.
 void main() {
-  List<String> names = ['Teja', 'dharma', 'dharmtejaa', 'tej'];
-  for (var nam in names) {
-    print(nam);
+  Set<String> fruitNames = {'grapes', 'mango', 'apple', 'banana'};
+  for (var fruit in fruitNames) {
+    print(fruit);
   }
 }
