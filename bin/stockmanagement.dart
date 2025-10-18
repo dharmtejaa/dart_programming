@@ -1,7 +1,13 @@
-//Add your 7 friend names to the list. Use where to find a name that starts with alphabet a.
-
+//Create a map with name, address, age country keys and store values to it. Update country name to other country and print all keys and values.
 void main() {
-  List<String> friends = ["Ali", "Bharat", "Charan", "Dhanu"];
-  var aNames = friends.where((name) => name.startsWith('a'));
-  print(aNames);
+  Map<String, dynamic> person = {
+    'name': 'John Doe',
+    'address': '123 Main St',
+    'age': 30,
+    'country': 'USA',
+  };
+  person['country'] = 'Canada';
+  person.forEach((key, value) {
+    print('$key: $value');
+  });
 }
