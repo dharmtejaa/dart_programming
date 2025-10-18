@@ -1,10 +1,16 @@
-//Write a dart program to create 100 files using loop.
+//Write a dart program to delete the file “hello_copy.txt”. Make sure you have created the file “hello_copy.txt.
 import 'dart:io';
 
 void main() {
-  for (int i = 1; i <= 100; i++) {
-    File file = File('file_$i.txt');
-    file.writeAsStringSync('This is file number $i');
+  final file = File('hello_copy.txt');
+  try {
+    if (file.existsSync()) {
+      file.deleteSync();
+      print('File "hello_copy.txt" deleted successfully.');
+    } else {
+      print('File "hello_copy.txt" does not exist.');
+    }
+  } catch (e) {
+    print('An error occurred while deleting the file: $e');
   }
-  print('100 files created successfully.');
 }
