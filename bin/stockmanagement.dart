@@ -1,10 +1,7 @@
-//Write a dart program to add your name to “hello.txt” file.
+//Write a dart program to get the current working directory.
 import 'dart:io';
 
 void main() {
-  File file = File('hello.text');
-  file.writeAsStringSync('Dharma Teja\n', mode: FileMode.append);
-  print('Name added to hello.txt');
-  print('File path: ${file.absolute.path}');
-  print(file.readAsStringSync());
+  String currentDirectory = Directory.current.path;
+  print('Current working directory: $currentDirectory');
 }
