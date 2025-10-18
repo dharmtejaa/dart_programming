@@ -1,7 +1,12 @@
-//Create a set of fruits and print all fruits using loop.
+//Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
 void main() {
-  Set<String> fruitNames = {'grapes', 'mango', 'apple', 'banana'};
-  for (var fruit in fruitNames) {
-    print(fruit);
-  }
+  List<String> days = [];
+  days.add("Sunday");
+  days.add("Mondat");
+  days.add("Tuesday");
+  days.add("Wednesday");
+  days.add("Thursday");
+  days.add("Friday");
+  days.add("Saturday");
+  print(days);
 }
