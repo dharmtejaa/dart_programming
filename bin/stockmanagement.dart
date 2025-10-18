@@ -1,12 +1,7 @@
-//Create an empty list of type string called days. Use the add method to add names of 7 days and print all days.
+//Add your 7 friend names to the list. Use where to find a name that starts with alphabet a.
+
 void main() {
-  List<String> days = [];
-  days.add("Sunday");
-  days.add("Mondat");
-  days.add("Tuesday");
-  days.add("Wednesday");
-  days.add("Thursday");
-  days.add("Friday");
-  days.add("Saturday");
-  print(days);
+  List<String> friends = ["Ali", "Bharat", "Charan", "Dhanu"];
+  var aNames = friends.where((name) => name.startsWith('a'));
+  print(aNames);
 }
